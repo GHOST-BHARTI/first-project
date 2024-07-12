@@ -36,7 +36,7 @@
 }
 .border::after{
     content: "";
-    position: absolute;
+    position:absolute;
     height: 1.5px;
     width: 0%;
     background-color: white;
@@ -93,20 +93,21 @@
     color: #0f1111;
 }
 .flaglogo{
-    background-color: #0f1111;
+    /* background-color: #0f1111; */
     background-image: url("flag-logo.png");
     background-size:cover;
     width: 27px;
     height: 18px;
+    /* border: 2px solid white; */
 }
 .flag {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-search:hover{
+/* .nav-search:hover{
     border:2px solid orange;
-}
+} */
 span{
     font-size: 0.7rem;
 }
@@ -147,7 +148,7 @@ span{
 
 }
 .hero-section{
-    background-image: url("hero_image.jpg");
+    background-image: url("./hero_image.jpeg");
     height: 400px;
     background-size: cover  ;
     display:flex;
@@ -183,9 +184,13 @@ span{
     display: flex;
     flex-wrap: wrap ;
     justify-content: space-evenly;
-    margin-left:50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    /* margin-left:50px;
     margin-right: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 15px; */
+    background-color: #D3DADD;
 }    
     
 .box {
