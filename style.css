@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: Arial;
+    font-family:system-ui;
     border: border-box;
 
 }
@@ -11,6 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
+    z-index: 6;
 }
 .nav-logo{
     height: 50px;
@@ -100,6 +102,9 @@
 span{
     font-size: 0.7rem;
 }
+.nav-signin{
+    cursor: pointer;
+}
 .nav-second{
     font-size: 0.85rem;
     font-weight: 700;
@@ -120,8 +125,21 @@ span{
     justify-content: space-evenly;
     align-items: center;
     color: white;
-
 }
+.panel-all {
+    cursor: pointer;
+}
+.triangle{
+    position:absolute;
+    z-index: 101;
+    top: -4vh;
+    right: 20vw;
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+    border: 12px solid blue;
+    border-color: transparent transparent rgba(255, 255, 255, 0.537) transparent;
+} 
 .panel-ops p{
     display: inline;
 }
@@ -138,8 +156,84 @@ span{
     font-weight: 700;
 
 }
+#full{
+    height: 50vh;
+    width: 22%;
+    position:absolute;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.407);
+    top: 13vh;
+    left: -33%;
+    z-index: 5;
+    backdrop-filter: blur(16px);
+    padding: 150px 60px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    
+}
+#full h4{
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#full i{
+    height: 3.5vh;
+    width: 3.5vh;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+}
+.signin-opt{
+    height: 35vh;
+    width: 24.5%;
+    position:absolute;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.537);
+    /* top: 7.7vh; */
+    top: -49vh;
+    left:55%;
+    z-index: 5;
+    display: flex;
+    backdrop-filter: blur(16px);
+    padding: 30px 35px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+.signin-right{
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid black;
+    padding-left: 23px;
+}
+.signin-right h3{
+    font-size: 14.5px;
+    font-weight:500;
+}
+.signin-left{
+    width: 50%;
+    height: 100%;
+}
+.signin-left h3{
+    font-size: 14.5px;
+    font-weight:500;
+}
+#mainpage-overlay{
+    height: 88vh;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.405);
+    position:fixed;
+    z-index:3;
+    display: none;
+}
 .hero-section{
-    /* height:40vh; */
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -360,3 +454,4 @@ ul a{
     width: 100%;
     background-color:transparent;
 }
+
